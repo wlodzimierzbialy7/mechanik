@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twój Warsztat | Mechanika, Diagnostyka, Detailing</title>
+<meta name="description" content="Twój Warsztat - profesjonalna mechanika samochodowa, diagnostyka komputerowa i detailing. Zadzwoń: 123 456 789">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <img src="assets/logo.png" alt="Twój Warsztat" class="logo__img">
+      <span class="logo__text">TWÓJ<span>WARSZTAT</span></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#o-nas">O nas</a>
+      <a href="#proces">Jak działamy</a>
+      <a href="#uslugi">Usługi</a>
+      <a href="#galeria">Realizacje</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="tel:123456789" class="btn btn--call">
+        <i class="fa-solid fa-phone"></i> 123 456 789
+      </a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE NAVIGATION ============ -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav__close" id="mobileNavClose" aria-label="Zamknij menu"><i class="fa-solid fa-xmark"></i></button>
+  <a href="#o-nas">O nas</a>
+  <a href="#proces">Jak działamy</a>
+  <a href="#uslugi">Usługi</a>
+  <a href="#galeria">Realizacje</a>
+  <a href="#kontakt">Kontakt</a>
+  <a href="tel:123456789" class="btn btn--primary"><i class="fa-solid fa-phone"></i> Zadzwoń: 123 456 789</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero__inner">
+    
+    <div class="hero__content">
+      <span class="tag-label" data-aos="fade-up">Warsztat Samochodowy</span>
+      <h1 data-aos="fade-up" data-aos-delay="100">
+        Naprawiamy.<br>
+        Diagnozujemy.<br>
+        <span class="hero__accent">Zawsze rzetelnie.</span>
+      </h1>
+      <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="200">
+        Mechanika ogólna, diagnostyka komputerowa i detailing — z pełną wyceną przed każdą naprawą.
+      </p>
+      <div class="hero__status" data-aos="fade-up" data-aos-delay="300">
+        <span class="status-dot"></span>
+        <span id="statusText">Otwarte teraz · Zamykamy o 18:00</span>
+      </div>
+      <div class="hero__cta" data-aos="fade-up" data-aos-delay="400">
+        <a href="#uslugi" class="btn btn--primary">Zobacz Usługi</a>
+        <a href="tel:123456789" class="btn btn--outline"><i class="fas fa-phone"></i> Zadzwoń</a>
+      </div>
+    </div>
+
+    <div class="hero__visual" data-aos="fade-left" data-aos-delay="200">
+      <img src="assets/hero-warsztat.jpg" alt="Wnętrze warsztatu">
+      <div class="hero__floatcard">
+        <span class="hero__floatcard-num">15+</span>
+        <span class="hero__floatcard-label">lat na rynku</span>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ============ GWARANCJE (Zamiast statystyk) ============ -->
+<section class="guarantees-bar">
+  <div class="container guarantees-grid">
+    <div class="guarantee-item" data-aos="fade-up">
+      <i class="fa-solid fa-file-invoice-dollar"></i>
+      <span class="guarantee-item__title">Jasna Wycena</span>
+      <span class="guarantee-item__desc">Kosztorys części i robocizny przed naprawą</span>
+    </div>
+    <div class="guarantee-item" data-aos="fade-up" data-aos-delay="100">
+      <i class="fa-solid fa-laptop-medical"></i>
+      <span class="guarantee-item__title">Precyzyjna Diagnoza</span>
+      <span class="guarantee-item__desc">Nowoczesny sprzęt do każdej marki</span>
+    </div>
+    <div class="guarantee-item" data-aos="fade-up" data-aos-delay="200">
+      <i class="fa-solid fa-gears"></i>
+      <span class="guarantee-item__title">Sprawdzone Części</span>
+      <span class="guarantee-item__desc">Oryginały i najwyższej jakości zamienniki</span>
+    </div>
+    <div class="guarantee-item" data-aos="fade-up" data-aos-delay="300">
+      <i class="fa-solid fa-clock"></i>
+      <span class="guarantee-item__title">Terminowość</span>
+      <span class="guarantee-item__desc">Szanujemy Twój czas. Auto oddajemy w terminie</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCES ============ -->
+<section class="process" id="proces">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="tag-label">Jak Działamy</span>
+      <h2 class="section-title">Od Diagnozy Do Kluczy w Ręce</h2>
+    </div>
+
+    <div class="process__list">
+
+      <div class="process__step" data-aos="fade-up">
+        <div class="process__num">01</div>
+        <div class="process__body">
+          <h3>Bezpłatna Diagnoza</h3>
+          <p>Podczas pierwszej wizyty sprawdzamy usterkę na profesjonalnym sprzęcie diagnostycznym — bez zobowiązań z Twojej strony.</p>
+        </div>
+      </div>
+
+      <div class="process__step" data-aos="fade-up" data-aos-delay="100">
+        <div class="process__num">02</div>
+        <div class="process__body">
+          <h3>Przejrzysta Wycena</h3>
+          <p>Przed rozpoczęciem jakichkolwiek prac przedstawiamy pełny kosztorys. Żadnych niespodzianek na fakturze.</p>
+        </div>
+      </div>
+
+      <div class="process__step" data-aos="fade-up" data-aos-delay="200">
+        <div class="process__num">03</div>
+        <div class="process__body">
+          <h3>Fachowa Naprawa</h3>
+          <p>Pracujemy na sprawdzonych częściach — oryginalnych lub równoważnej jakości, zawsze po konsultacji z Tobą.</p>
+        </div>
+      </div>
+
+      <div class="process__step" data-aos="fade-up" data-aos-delay="300">
+        <div class="process__num">04</div>
+        <div class="process__body">
+          <h3>Gwarancja i Wsparcie</h3>
+          <p>Na wykonane usługi udzielamy gwarancji i jesteśmy dostępni telefonicznie po naprawie, jeśli coś Cię zaniepokoi.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ O NAS ============ -->
+<section class="about" id="o-nas">
+  <div class="container about__grid">
+    <div class="about__visual" data-aos="fade-right">
+      <img src="assets/warsztat.jpg" alt="Wnętrze warsztatu">
+    </div>
+    <div class="about__content" data-aos="fade-left">
+      <span class="tag-label">O Nas</span>
+      <h2 class="section-title">Warsztat, Któremu<br>Możesz Zaufać</h2>
+      <p>Twój Warsztat to serwis samochodowy działający od lat, w którym każdy klient traktowany jest indywidualnie. Naprawiamy pojazdy różnych marek — od prostej wymiany oleju po złożoną diagnostykę elektroniki.</p>
+      <p>Stawiamy na przejrzystość: przed każdą usługą przedstawiamy wycenę, a wszystkie prace dokumentujemy i wykonujemy z użyciem sprawdzonego sprzętu.</p>
+      <a href="#uslugi" class="btn btn--primary">Zobacz Naszą Ofertę</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ USŁUGI (statyczne, bez CMS) ============ -->
+<section id="uslugi" class="services-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="tag-label">Nasza Oferta</span>
+      <h2 class="section-title">Usługi</h2>
+    </div>
+
+    <div class="service-tabs" id="serviceTabs">
+      <button class="service-tab-btn active" data-category="wszystkie">Wszystkie</button>
+      <button class="service-tab-btn" data-category="mechanika">Mechanika</button>
+      <button class="service-tab-btn" data-category="diagnostyka">Diagnostyka</button>
+      <button class="service-tab-btn" data-category="ogumienie">Ogumienie</button>
+      <button class="service-tab-btn" data-category="detailing">Detailing</button>
+    </div>
+
+    <div class="service-items-container" id="serviceItemsContainer">
+
+      <div class="service-item" data-category="mechanika" data-aos="fade-up">
+        <div class="service-item-header">
+          <h3 class="service-item-name">Wymiana Oleju i Filtrów</h3>
+          <span class="service-item-price">od 149 zł</span>
+        </div>
+        <p class="service-item-description">Pełna wymiana oleju silnikowego wraz z filtrem oleju, powietrza i kabinowego.</p>
+      </div>
+
+      <div class="service-item" data-category="mechanika" data-aos="fade-up">
+        <div class="service-item-header">
+          <h3 class="service-item-name">Naprawa Układu Hamulcowego</h3>
+          <span class="service-item-price">od 249 zł</span>
+        </div>
+        <p class="service-item-description">Wymiana klocków, tarcz i płynu hamulcowego z pomiarem zużycia elementów.</p>
+      </div>
+
+      <div class="service-item" data-category="mechanika" data-aos="fade-up">
+        <div class="service-item-header">
+          <h3 class="service-item-name">Naprawa Zawieszenia</h3>
+          <span class="service-item-price">od 199 zł</span>
+        </div>
+        <p class="service-item-description">Diagnoza i wymiana amortyzatorów, sprężyn oraz elementów układu kierowniczego.</p>
+      </div>
+
+      <div class="service-item" data-category="diagnostyka" data-aos="fade-up">
+        <div class="service-item-header">
+          <h3 class="service-item-name">Diagnostyka Komputerowa</h3>
+          <span class="service-item-price">od 99 zł</span>
+        </div>
+        <p class="service-item-description">Pełny odczyt błędów z komputera pokładowego wraz z interpretacją usterki.</p>
+      </div>
+
+      <div class="service-item" data-category="diagnostyka" data-aos="fade-up">
+        <div class="service-item-header">
+          <h3 class="service-item-name">Diagnostyka Przed Zakupem</h3>
+          <span class="service-item-price">od 179 zł</span>
+        </div>
+        <p class="service-item-description">Kompleksowe sprawdzenie pojazdu przed zakupem — mechanika, elektronika, historia.</p>
+      </div>
+
+      <div class="service-item" data-category="ogumienie" data-aos="fade-up">
+        <div class="service-item-header">
+          <h3 class="service-item-name">Wymiana i Wyważanie Kół</h3>
+          <span class="service-item-price">od 79 zł</span>
+        </div>
+        <p class="service-item-description">Sezonowa wymiana ogumienia wraz z wyważeniem i kontrolą ciśnienia.</p>
+      </div>
+
+      <div class="service-item" data-category="ogumienie" data-aos="fade-up">
+        <div class="service-item-header">
+          <h3 class="service-item-name">Sezonowy Hotel dla Opon</h3>
+          <span class="service-item-price">od 149 zł / sezon</span>
+        </div>
+        <p class="service-item-description">Przechowywanie opon w odpowiednich warunkach między sezonami.</p>
+      </div>
+
+      <div class="service-item" data-category="detailing" data-aos="fade-up">
+        <div class="service-item-header">
+          <h3 class="service-item-name">Detailing Wnętrza</h3>
+          <span class="service-item-price">od 249 zł</span>
+        </div>
+        <p class="service-item-description">Pranie tapicerki, czyszczenie plastików i dezynfekcja ozonem.</p>
+      </div>
+
+      <div class="service-item" data-category="detailing" data-aos="fade-up">
+        <div class="service-item-header">
+          <h3 class="service-item-name">Detailing Karoserii</h3>
+          <span class="service-item-price">od 349 zł</span>
+        </div>
+        <p class="service-item-description">Korekta lakieru, woskowanie lub powłoka ceramiczna na życzenie.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIA (bento grid) ============ -->
+<section class="gallery" id="galeria">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="tag-label">Nasze Realizacje</span>
+      <h2 class="section-title">Zobacz Nasz Warsztat</h2>
+    </div>
+    <div class="gallery__grid">
+      <!-- 1. Główne, duże zdjęcie (lewa strona) -->
+      <div class="gallery__item gallery__item--big" data-aos="fade-up">
+        <img src="assets/gallery/1.jpg" alt="Warsztat - stanowisko naprawcze" data-lightbox>
+      </div>
+      <!-- 2. Diagnostyka (góra środek) -->
+      <div class="gallery__item" data-aos="fade-up" data-aos-delay="50">
+        <img src="assets/gallery/2.jpg" alt="Diagnostyka komputerowa" data-lightbox>
+      </div>
+      <!-- 3. Detailing (góra prawo) -->
+      <div class="gallery__item" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/gallery/3.jpg" alt="Detailing samochodu" data-lightbox>
+      </div>
+      <!-- 4. Opony (środek) -->
+      <div class="gallery__item" data-aos="fade-up" data-aos-delay="150">
+        <img src="assets/gallery/6.jpg" alt="Serwis ogumienia" data-lightbox>
+      </div>
+      <!-- 5. Pionowe zdjęcie - Podnośnik (prawa strona, schodzi w dół) -->
+      <div class="gallery__item gallery__item--tall" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/gallery/4.jpg" alt="Podnośnik warsztatowy" data-lightbox>
+      </div>
+      <!-- 6. Szerokie zdjęcie - Olej (idealnie wypełni dół z lewej) -->
+      <div class="gallery__item gallery__item--wide" data-aos="fade-up" data-aos-delay="250">
+        <img src="assets/gallery/5.jpg" alt="Wymiana oleju" data-lightbox>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ KONTAKT ============ -->
+<section class="contact" id="kontakt">
+  <div class="container contact__grid">
+
+    <div class="contact__info" data-aos="fade-right">
+      <span class="tag-label">Odwiedź Nas</span>
+      <h2 class="section-title">Kontakt</h2>
+
+      <div class="contact-item"><i class="fa-solid fa-location-dot"></i><div><strong>Adres</strong><p>ul. Przykładowa 1<br>00-001 Miasto</p></div></div>
+      <div class="contact-item"><i class="fa-solid fa-phone"></i><div><strong>Telefon</strong><p><a href="tel:123456789">123 456 789</a></p></div></div>
+      <div class="contact-item"><i class="fa-solid fa-envelope"></i><div><strong>Email</strong><p><a href="mailto:kontakt@twojwarsztat.pl">kontakt@twojwarsztat.pl</a></p></div></div>
+      <div class="contact-item"><i class="fa-brands fa-facebook"></i><div><strong>Facebook</strong><p><a href="#" target="_blank" rel="noopener">Twój Warsztat</a></p></div></div>
+
+      <div class="hours-table">
+        <h4>Godziny Otwarcia</h4>
+        <div class="hours-row"><span>Poniedziałek - Piątek</span><span>08:00 - 18:00</span></div>
+        <div class="hours-row"><span>Sobota</span><span>08:00 - 14:00</span></div>
+        <div class="hours-row"><span>Niedziela</span><span>Zamknięte</span></div>
+      </div>
+    </div>
+
+    <div class="contact__interactive" data-aos="fade-left">
+      <div class="contact__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.6354182555347!2d21.003420077016774!3d52.23184125752368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8c92692e49%3A0xc2e97ae5311f2dc2!2sPa%C5%82ac%20Kultury%20i%20Nauki!5e0!3m2!1spl!2spl!4v1788024497788!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="e87bf0b7-d95c-4e54-9153-05d9982f1477">
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <h4>Zadaj pytanie</h4>
+        <div class="form-row">
+          <div class="form-group"><input type="text" name="Imię" placeholder="Imię i nazwisko" required></div>
+          <div class="form-group"><input type="tel" name="Telefon" placeholder="Numer telefonu" required></div>
+        </div>
+        <div class="form-group"><input type="text" name="Marka i model" placeholder="Marka i model samochodu"></div>
+        <div class="form-group"><textarea name="Wiadomość" rows="4" placeholder="Opisz swój problem" required></textarea></div>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <button type="submit" class="btn btn--primary">Wyślij zapytanie</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <img src="assets/logo.png" alt="Twój Warsztat" class="footer__logo">
+      <p>Profesjonalny warsztat samochodowy. Mechanika, diagnostyka i detailing z przejrzystą wyceną.</p>
+    </div>
+    <div class="footer__links">
+      <h4>Nawigacja</h4>
+      <a href="#o-nas">O nas</a><br>
+      <a href="#proces">Jak działamy</a><br>
+      <a href="#uslugi">Usługi</a><br>
+      <a href="#galeria">Realizacje</a><br>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="footer__contact">
+      <h4>Kontakt</h4>
+      <p><i class="fa-solid fa-location-dot"></i> ul. Przykładowa 1, 00-001 Miasto</p>
+      <p><a href="tel:123456789"><i class="fa-solid fa-phone"></i> 123 456 789</a></p>
+      <a href="#" class="footer__social"><i class="fa-brands fa-facebook"></i> Facebook</a>
+    </div>
+  </div>
+  <div class="footer__bottom"><p>&copy; 2026 Twój Warsztat. Wszystkie prawa zastrzeżone.</p></div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<a href="tel:123456789" class="mobile-cta"><i class="fa-solid fa-phone"></i> Zadzwoń teraz</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
